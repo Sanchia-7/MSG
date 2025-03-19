@@ -3,7 +3,8 @@
 import { useEffect, useRef } from "react"
 import { motion } from "framer-motion"
 import Image from "next/image"
-import LazyLoad from 'react-lazy-load';
+import LazyLoad from 'react-lazy-load'
+import Link from "next/link"  
 
 export default function Hero() {
   const textRef = useRef<HTMLDivElement>(null)
@@ -42,22 +43,20 @@ export default function Hero() {
     <section className="relative h-screen w-full overflow-hidden">
       {/* Background with parallax effect */}
       <div className="absolute inset-0 z-0">
-      <LazyLoad height={1080} offset={100} onContentVisible={handleContentVisible}>
-      <video
-  id="myVideo"
-  className="object-cover w-full h-full absolute top-0 left-0"
-  autoPlay
-  loop
-  muted
-  preload="auto"
-  alt="Industrial background"
->
-  <source src="/main.mp4" type="video/mp4" />
-  Your browser does not support the video tag.
-</video>
-    </LazyLoad>
-
-
+        <LazyLoad height={1080} offset={100} onContentVisible={handleContentVisible}>
+          <video
+            id="myVideo"
+            className="object-cover w-full h-full absolute top-0 left-0"
+            autoPlay
+            loop
+            muted
+            preload="auto"
+            alt="Industrial background"
+          >
+            <source src="/main.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </LazyLoad>
         <div className="absolute inset-0 bg-black/60 z-10"></div>
       </div>
 
@@ -118,12 +117,15 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.8 }}
             className="mt-8"
           >
-            <a
-              href="#learn-more"
-              className="inline-block bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-medium px-6 py-3 rounded-md transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
-            >
-              LEARN MORE
-            </a>
+            <Link href="/about">
+              <motion.button
+                whileHover={{ scale: 1.03 }}
+                whileTap={{ scale: 0.98 }}
+                className="inline-block bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-medium px-6 py-3 rounded-md transition-all duration-300 transform hover:scale-105 hover:shadow-lg"
+              >
+                Who We Are
+              </motion.button>
+            </Link>
           </motion.div>
         </motion.div>
       </div>
@@ -150,4 +152,3 @@ export default function Hero() {
     </section>
   )
 }
-

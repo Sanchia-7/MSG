@@ -25,8 +25,6 @@ export default function CladdingPage() {
       <PageHeader title="Cladding" />
 
       <ProductSection
-        image="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-T7XI7P3oCyvbxuuhGxK00Y6abtOphK.png"
-        imageAlt="Cladding Process"
       >
         <div>
           <motion.p

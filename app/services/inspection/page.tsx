@@ -25,15 +25,15 @@ export default function InspectionPage() {
       <PageHeader title="Inspection" />
 
       <ProductSection
-        image="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-SsDkS9HMkXdgOuBdceOABkh4ywVVNz.png"
+        image="/inspec.jpeg"
         imageAlt="Inspection measurement with caliper"
       >
-        <div>
+        <div className="justify-center items-center">
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-gray-700 dark:text-gray-300"
+            className="text-gray-700 text-lg dark:text-gray-300 text-justify px-10 py-20 justify-center items-center"
           >
             With our vast experience, we are well aware of the inspection requirements of our Clientele. We can arrange
             for Third party inspections on customer requests. Depending on our customers requirements we can outsource

@@ -5,6 +5,7 @@ import { motion } from "framer-motion"
 import { useInView } from "react-intersection-observer"
 import { Send } from "lucide-react"
 import { useState } from "react"
+import Link from "next/link"  
 
 export default function ContactSection() {
   const [ref, inView] = useInView({
@@ -91,6 +92,8 @@ export default function ContactSection() {
               oilfield industry.
             </p>
           </motion.div>
+           <Link
+              href="/contact" className=" ">
 
           <motion.button
             whileHover={{ scale: 1.03 }}
@@ -100,6 +103,7 @@ export default function ContactSection() {
             <Send className="h-5 w-5 mr-2 z-10" />
             Send Message
           </motion.button>
+          </Link>
         </motion.div>
       </div>
     </section>

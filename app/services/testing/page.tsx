@@ -25,7 +25,7 @@ export default function TestingPage() {
       <PageHeader title="Testing" />
 
       <ProductSection
-        image="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-77P1RkEs8fHVmEdJ82uBXzTCQRHZFy.png"
+        image="/testing.jpeg"
         imageAlt="Testing measurement with caliper"
       >
         <div>
@@ -33,7 +33,7 @@ export default function TestingPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-gray-700 dark:text-gray-300"
+            className="text-gray-700 dark:text-gray-300 px-10 py-15 items-center justify-center"
           >
             With our vast experience, we are well aware of the testing requirements of our Clientele. We can arrange for
             Third party testing on customer requests. Depending on our customers requirements we can outsource all kinds

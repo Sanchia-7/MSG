@@ -9,7 +9,7 @@ import ContactSection from "@/components/contact-section"
 import BrandShowcase from "@/components/brand-showcase"
 import Newsletter from "@/components/newsletter"
 import Footer from "@/components/footer"
-
+import FloatingContactButton from "@/components/floating-contact-button"
 
 export default function Home() {
   return (
@@ -24,6 +24,7 @@ export default function Home() {
       <ContactSection />
       <BrandShowcase />
       <Newsletter />
+      <FloatingContactButton/>
       <Footer />
     </main>
   )

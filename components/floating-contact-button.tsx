@@ -125,7 +125,7 @@ export default function FloatingContactButton() {
     <div className="fixed bottom-6 right-6 z-50">
       <AnimatePresence>
         {isOpen && (
-          <div className="absolute bottom-20 right-0 flex flex-col items-center space-y-4">
+          <div className="absolute bottom-20 right-1 flex flex-col items-center space-y-4">
             {/* WhatsApp Button */}
             <motion.a
               href="https://wa.me/+971429512222"
@@ -137,7 +137,7 @@ export default function FloatingContactButton() {
               animate="animate"
               exit="exit"
               whileHover="hover"
-              className="flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg"
+              className="flex h-14 w-14 items-center  justify-center rounded-full bg-[#25D366] text-white shadow-lg"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -163,13 +163,13 @@ export default function FloatingContactButton() {
               animate="animate"
               exit="exit"
               whileHover="hover"
-              className="flex h-14 w-14 items-center justify-center rounded-full bg-[#4CAF50] text-white shadow-lg"
+              className="flex h-14 w-14 items-center  justify-center rounded-full bg-[#4CAF50] text-white shadow-lg"
             >
               <Phone size={24} />
             </motion.a>
 
             {/* Close Button */}
-            <motion.button
+            {/* <motion.button
               onClick={toggleOpen}
               custom={3}
               variants={actionButtonVariants}
@@ -180,7 +180,7 @@ export default function FloatingContactButton() {
               className="flex h-14 w-14 items-center justify-center rounded-full bg-[#F0F0A0] text-gray-800 shadow-lg"
             >
               <X size={24} />
-            </motion.button>
+            </motion.button> */}
           </div>
         )}
       </AnimatePresence>

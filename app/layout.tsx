@@ -2,6 +2,10 @@ import type { Metadata } from 'next'
 // In your _app.tsx or component file
 import "swiper/swiper-bundle.min.css";
 
+import Navbar from '@/components/navbar';
+import Footer from '@/components/footer';
+import FloatingContactButton from '@/components/floating-contact-button';
+
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -20,7 +24,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        {/* <Navbar />  Navbar always present */}
+        <main>{children}</main>  {/* Main content */}
+        {/* <Footer />  Footer always present */}
+        <FloatingContactButton /> {/* Floating Contact Button */}
+      </body>
     </html>
   )
 }

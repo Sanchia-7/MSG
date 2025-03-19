@@ -37,28 +37,22 @@ export default function ServicesPage() {
   const services = [
     {
       title: "Testing",
-      icon: "🧪",
+      image: "/service-gas.jpg",
       description:
         "With our vast experience, we are well aware of the Testing requirements of our Clients. We can arrange for Third party inspections on customer requests. Depending on our customers requirements we can outsource all kinds of relevant Testing.",
-      bgColor: "bg-gray-100",
-      iconBgColor: "bg-yellow-400",
+
     },
     {
       title: "Inspection",
-      icon: "🔍",
+      image: "/service-petrol.jpg",
       description:
         "With our vast experience, we are well aware of the Inspection requirements of our Clients. We can arrange for Third party inspections on customer requests. Depending on our customers requirements we can outsource all kinds of relevant Inspection.",
-      bgColor: "bg-gray-900",
-      iconBgColor: "bg-yellow-400",
-      textColor: "text-white",
     },
     {
       title: "Cladding",
-      icon: "👑",
+      image: "/service-methane.jpg",
       description:
         "Cladding is the process by which layer of Corrosion Resistant Alloy (CRA) is bonded internally on the normal Carbon Steel Pipe by various processes. There by providing corrosion resistant properties of CRA and Mechanical Properties of Carbon Steel Pipes.",
-      bgColor: "bg-gray-100",
-      iconBgColor: "bg-yellow-400",
     },
   ]
 
@@ -84,7 +78,7 @@ export default function ServicesPage() {
                   boxShadow: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
                   transition: { duration: 0.3 },
                 }}
-                className={`${service.bgColor} rounded-lg p-8 relative overflow-hidden`}
+                className={`${service} rounded-lg p-8 relative overflow-hidden`}
               >
                 <div className="absolute top-0 right-0 w-32 h-32 bg-yellow-400/10 rounded-bl-full"></div>
 
@@ -93,7 +87,7 @@ export default function ServicesPage() {
                     initial={{ scale: 0 }}
                     animate={{ scale: 1 }}
                     transition={{ duration: 0.5, delay: index * 0.2 }}
-                    className={`w-16 h-16 ${service.iconBgColor} rounded-full flex items-center justify-center text-2xl`}
+                    className={`w-16 h-16 ${service} rounded-full flex items-center justify-center text-2xl`}
                   >
                     <motion.span
                       animate={{
@@ -102,25 +96,30 @@ export default function ServicesPage() {
                       }}
                       transition={{ duration: 5, repeat: Number.POSITIVE_INFINITY, repeatType: "reverse" }}
                     >
-                      {service.icon}
+                      <Image
+                        src={service.image}
+                        width={800}
+                        height={600}
+                        alt="Service Image"
+                        className="w-full h-auto rounded-full"
+                      />
                     </motion.span>
                   </motion.div>
                 </div>
 
-                <h3 className={`text-2xl font-bold ${service.textColor || "text-gray-900"} mb-4 text-center`}>
+                <h3 className={`text-2xl font-bold ${service || "text-gray-900"} mb-4 text-center`}>
                   {service.title}
                 </h3>
 
-                <p className={`${service.textColor || "text-gray-600"} mb-6 text-sm`}>{service.description}</p>
+                <p className={`${service || "text-gray-600"} mb-6 text-sm`}>{service.description}</p>
 
                 <div className="text-center">
                   <Link
                     href={`/services/${service.title.toLowerCase()}`}
-                    className={`inline-flex items-center ${
-                      service.textColor
-                        ? "text-yellow-400 hover:text-yellow-300"
-                        : "text-yellow-600 hover:text-yellow-700"
-                    } font-medium transition-colors duration-300`}
+                    className={`inline-flex items-center ${service
+                      ? "text-black hover:text-yellow-300"
+                      : "text-black hover:text-yellow-700"
+                      } font-medium transition-colors duration-300`}
                   >
                     <span>Learn More</span>
                     <svg
@@ -147,8 +146,14 @@ export default function ServicesPage() {
             animate={inView ? "visible" : "hidden"}
             className="relative rounded-lg overflow-hidden mb-20"
           >
-            <div className="relative h-[400px]">
-              <Image src="/placeholder.svg?height=400&width=1200" alt="Oil Industry" fill className="object-cover" />
+            <div className="relative h-[400px]" style={{
+              backgroundImage: "url('/service1.jpeg')",
+              backgroundSize: "cover", // Cover the entire section
+              backgroundPosition: "center", // Center the background image
+              backgroundAttachment: "fixed", // Fixed background
+            }}
+            >
+              {/* <Image src="/service1.jpeg" alt="Oil Industry" fill className="object-cover bg-fixed" /> */}
               <div className="absolute inset-0 bg-black/50"></div>
 
               <div className="absolute inset-0 flex flex-col justify-center p-8 md:p-16">

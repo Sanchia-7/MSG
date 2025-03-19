@@ -52,7 +52,7 @@ export default function Suppliers() {
           </div>
           <motion.div variants={itemVariants} whileHover={{ scale: 1.05 }} className="flex-shrink-0 z-20">
             <Link
-              href="/quote"
+              href="/contact"
               className="z-20 bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-medium px-6 py-3 rounded-md transition-all duration-300 shadow-md hover:shadow-lg"
             >
               Get a Quote

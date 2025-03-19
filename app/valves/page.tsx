@@ -1,7 +1,7 @@
 "use client"
 import { motion } from "framer-motion"
 import PageHeader from "@/components/page-header"
-import ProductSection from "@/components/product-section"
+import ProductCard from "@/components/product-card"
 import SpecList from "@/components/spec-list"
 import Footer from "@/components/footer"
 import Navbar from "@/components/navbar"
@@ -13,7 +13,7 @@ export default function ValvesPage() {
     <div>
       <PageHeader title="API 6A & API 6D VALVES" />
 
-      <ProductSection image="/placeholder.svg?height=400&width=600" imageAlt="API 6A & API 6D Valves">
+      <ProductCard image="/p3.jpeg?height=400&width=600" imageAlt="API 6A & API 6D Valves">
         <div>
           <h2 className="mb-4 text-2xl font-bold">Valves</h2>
           <SpecList
@@ -48,7 +48,7 @@ export default function ValvesPage() {
             ]}
           />
         </div>
-      </ProductSection>
+      </ProductCard>
 
       <section className="py-12 md:py-16">
         <div className="container mx-auto px-4">

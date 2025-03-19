@@ -1,7 +1,7 @@
 "use client"
 import { motion } from "framer-motion"
 import PageHeader from "@/components/page-header"
-import ProductSection from "@/components/product-section"
+import ProductCard from "@/components/product-card"
 import Footer from "@/components/footer"
 import Navbar from "@/components/navbar"
 
@@ -12,7 +12,7 @@ export default function StrainersPage() {
     <div>
       <PageHeader title="Strainers" subtitle="MSG provides wide range of Strainers to our Clients." />
 
-      <ProductSection image="/placeholder.svg?height=400&width=600" imageAlt="Strainers">
+      <ProductCard image="/about2.jpeg?height=400&width=600" imageAlt="Strainers">
         <div>
           <p className="text-gray-700 dark:text-gray-300">
             MSG provides a complete package of <span className="font-semibold">pipe fitting</span> to almost every
@@ -23,7 +23,7 @@ export default function StrainersPage() {
             Client, that every product conforms to the given Standards.
           </p>
         </div>
-      </ProductSection>
+      </ProductCard>
 
       <section className="py-12 md:py-16">
         <div className="container mx-auto px-4">

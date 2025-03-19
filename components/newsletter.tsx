@@ -55,7 +55,7 @@ export default function Newsletter() {
   ]
 
   return (
-    <section className="py-16 md:py-24 bg-yellow-400 relative overflow-hidden" ref={ref}>
+    <section className="py-10 md:py-10 bg-yellow-400 relative overflow-hidden" ref={ref}>
       {/* Animated illustration elements */}
       {illustrationElements.map((el, index) => (
         <motion.div

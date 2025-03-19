@@ -56,9 +56,9 @@ export default function Navbar() {
       name: "Our Services",
       href: "/services",
       dropdown: [
-        { name: "Inspection", href: "services/inspection" },
-        { name: "Testing", href: "services/testing" },
-        { name: "Cladding", href: "services/cladding" },
+        { name: "Inspection", href: "/services/inspection" },
+        { name: "Testing", href: "/services/testing" },
+        { name: "Cladding", href: "/services/cladding" },
       ],
       highlight: true,
     },

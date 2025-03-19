@@ -98,7 +98,7 @@ export default function AboutPage() {
             <motion.div variants={itemVariants} className="order-1 md:order-2 relative">
               <div className="relative overflow-hidden rounded-lg shadow-lg">
                 <Image
-                  src="/placeholder.svg?height=600&width=800"
+                  src="/about1.jpeg"
                   alt="About us image"
                   width={800}
                   height={600}
@@ -138,7 +138,7 @@ export default function AboutPage() {
             <motion.div variants={itemVariants} className="relative">
               <div className="relative overflow-hidden rounded-lg shadow-lg">
                 <Image
-                  src="/placeholder.svg?height=600&width=800"
+                  src="/about2.jpeg"
                   alt="What we do image"
                   width={800}
                   height={600}

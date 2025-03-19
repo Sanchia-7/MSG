@@ -11,7 +11,7 @@ interface ProductSectionProps {
   reversed?: boolean
 }
 
-export default function ProductSection({ image, imageAlt, children, reversed = false }: ProductSectionProps) {
+export default function ProductCard({ image, imageAlt, children, reversed = false }: ProductSectionProps) {
   return (
     <section className=" px-120 py-0 md:py-16 ">
       <div className="container mx-auto px-4">
@@ -27,7 +27,7 @@ export default function ProductSection({ image, imageAlt, children, reversed = f
             viewport={{ once: true }}
             className="flex-1"
           >
-            <div className="relative h-[300px] w-full overflow-hidden md:h-[300px]">
+            <div className="relative h-[300px] w-full overflow-hidden md:h-[500px]">
               <Image src={image || "/placeholder.svg"} alt={imageAlt} fill className="object-cover" />
             </div>
           </motion.div>
@@ -36,7 +36,7 @@ export default function ProductSection({ image, imageAlt, children, reversed = f
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
-            className="flex-1 space-y-4"
+            className="flex-1 space-y-4 py-15 px-10"
           >
             {children}
           </motion.div>

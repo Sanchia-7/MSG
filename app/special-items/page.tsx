@@ -1,7 +1,7 @@
 "use client"
 import { motion } from "framer-motion"
 import PageHeader from "@/components/page-header"
-import ProductSection from "@/components/product-section"
+import ProductCard from "@/components/product-card"
 import Footer from "@/components/footer"
 import Navbar from "@/components/navbar"
 
@@ -12,7 +12,7 @@ export default function SpecialItemsPage() {
     <div>
       <PageHeader title="Special Items" />
 
-      <ProductSection image="/placeholder.svg?height=400&width=600" imageAlt="Special Items">
+      <ProductCard image="/placeholder.svg?height=400&width=600" imageAlt="Special Items">
         <div className="space-y-4">
           <ul className="space-y-2">
             <li className="text-gray-700 dark:text-gray-300">Isolation Joints</li>
@@ -27,7 +27,7 @@ export default function SpecialItemsPage() {
             <li className="text-gray-700 dark:text-gray-300">Welding Consumables</li>
           </ul>
         </div>
-      </ProductSection>
+      </ProductCard>
 
       <section className="py-12 md:py-16">
         <div className="container mx-auto px-4">

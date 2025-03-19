@@ -1,7 +1,7 @@
 "use client"
 import { motion } from "framer-motion"
 import PageHeader from "@/components/page-header"
-import ProductSection from "@/components/product-section"
+import ProductCard from "@/components/product-card"
 import SpecList from "@/components/spec-list"
 import QuoteForm from "@/components/quote-form"
 import Footer from "@/components/footer"
@@ -14,7 +14,7 @@ export default function FlangesPage() {
     <div>
       <PageHeader title="Flanges" />
 
-      <ProductSection image="/placeholder.svg?height=400&width=600" imageAlt="Flanges">
+      <ProductCard image="/p4.jpg?height=400&width=600" imageAlt="Flanges">
         <div>
           <div className="mb-4">
             <p className="text-gray-700 dark:text-gray-300">
@@ -45,7 +45,7 @@ export default function FlangesPage() {
             ]}
           />
         </div>
-      </ProductSection>
+      </ProductCard>
 
       <section className="py-12 md:py-16">
         <div className="container mx-auto px-4">

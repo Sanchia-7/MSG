@@ -29,13 +29,13 @@ export default function Footer() {
   const quickLinks = [
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
-    { name: "Products", href: "/products" },
-    { name: "Gallery", href: "/gallery" },
+    // { name: "Products", href: "/products" },
+    // { name: "Gallery", href: "/gallery" },
     { name: "Certification", href: "/certification" },
   ]
 
   const navigationLinks = [
-    { name: "Shop", href: "/shop" },
+    // { name: "Shop", href: "/shop" },
     { name: "Blog", href: "/blog" },
     { name: "FAQs", href: "/faqs" },
     { name: "Our Gallery", href: "/gallery" },
