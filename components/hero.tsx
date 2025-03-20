@@ -53,7 +53,7 @@ export default function Hero() {
             preload="auto"
             alt="Industrial background"
           >
-            <source src="/main.mp4" type="video/mp4" />
+            <source src="/maincom1.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </LazyLoad>

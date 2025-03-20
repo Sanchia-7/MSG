@@ -36,7 +36,7 @@ export default function Footer() {
 
   const navigationLinks = [
     // { name: "Shop", href: "/shop" },
-    { name: "Blog", href: "/blog" },
+    { name: "Blog", href: "/blogs" },
     { name: "FAQs", href: "/faqs" },
     { name: "Our Gallery", href: "/gallery" },
   ]

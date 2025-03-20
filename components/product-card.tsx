@@ -27,7 +27,7 @@ export default function ProductCard({ image, imageAlt, children, reversed = fals
             viewport={{ once: true }}
             className="flex-1"
           >
-            <div className="relative h-[300px] w-full overflow-hidden md:h-[500px]">
+            <div className="relative h-[300px] w-full overflow-hidden md:h-full">
               <Image src={image || "/placeholder.svg"} alt={imageAlt} fill className="object-cover" />
             </div>
           </motion.div>
