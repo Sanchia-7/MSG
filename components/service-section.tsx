@@ -196,7 +196,7 @@ export default function ServiceSection() {
                   <h3 className="text-white text-xl font-semibold mb-4">Social Media</h3>
                   <div className="space-y-3">
                     <motion.a
-                      href="#"
+                      href="https://www.facebook.com/msgoilfield"
                       className="flex items-center text-white hover:text-yellow-400 transition-colors"
                       variants={socialLinkVariants}
                       custom={0}
@@ -206,7 +206,7 @@ export default function ServiceSection() {
                       Facebook
                     </motion.a>
                     <motion.a
-                      href="#"
+                      href="https://www.instagram.com/msgoilfield/"
                       className="flex items-center text-white hover:text-yellow-400 transition-colors"
                       variants={socialLinkVariants}
                       custom={1}
@@ -216,7 +216,7 @@ export default function ServiceSection() {
                       Instagram
                     </motion.a>
                     <motion.a
-                      href="#"
+                      href="https://www.linkedin.com/company/msg-oilfield-equipment-trading-llc/"
                       className="flex items-center text-white hover:text-yellow-400 transition-colors"
                       variants={socialLinkVariants}
                       custom={2}

@@ -30,29 +30,18 @@ export default function CalculatorPage() {
 
   const calculators = [
     {
-      title: "Pipe Weight Calculator",
+      title: "Unit Calculator",
       description: "Calculate the weight of pipes based on dimensions and material",
       icon: "📏",
-      link: "/calculator/pipe-weight",
+      link: "/calculator/pipe-price",
     },
     {
       title: "Flange Weight Calculator",
       description: "Calculate the weight of flanges based on dimensions and material",
       icon: "⚖️",
-      link: "/calculator/flange-weight",
+      link: "/calculator/unit-converter",
     },
-    {
-      title: "Fitting Weight Calculator",
-      description: "Calculate the weight of fittings based on dimensions and material",
-      icon: "🔧",
-      link: "/calculator/fitting-weight",
-    },
-    {
-      title: "Material Converter",
-      description: "Convert between different material specifications and standards",
-      icon: "🔄",
-      link: "/calculator/material-converter",
-    },
+
   ]
 
   return (

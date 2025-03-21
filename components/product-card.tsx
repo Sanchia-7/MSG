@@ -16,9 +16,8 @@ export default function ProductCard({ image, imageAlt, children, reversed = fals
     <section className=" px-120 py-0 md:py-16 ">
       <div className="container mx-auto px-4">
         <div
-          className={`rounded-r-3xl flex flex-col gap-8 border border-gray-200 bg-white shadow-sm dark:border-gray-800 dark:bg-gray-950 lg:flex-row ${
-            reversed ? "lg:flex-row-reverse" : ""
-          }`}
+          className={`rounded-r-3xl flex flex-col gap-8 border border-gray-200 bg-white shadow-sm dark:border-gray-800 dark:bg-gray-950 lg:flex-row ${reversed ? "lg:flex-row-reverse" : ""
+            }`}
         >
           <motion.div
             initial={{ opacity: 0, x: reversed ? 20 : -20 }}
@@ -28,7 +27,7 @@ export default function ProductCard({ image, imageAlt, children, reversed = fals
             className="flex-1"
           >
             <div className="relative h-[300px] w-full overflow-hidden md:h-full">
-              <Image src={image || "/placeholder.svg"} alt={imageAlt} fill className="object-cover" />
+              <Image src={image} alt={imageAlt} fill className="object-cover" />
             </div>
           </motion.div>
           <motion.div
@@ -36,7 +35,7 @@ export default function ProductCard({ image, imageAlt, children, reversed = fals
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
-            className="flex-1 space-y-4 py-15 px-10"
+            className="flex-1 space-y-4 pb-10 px-10 pt-10" // Added "pt-10" for top padding
           >
             {children}
           </motion.div>

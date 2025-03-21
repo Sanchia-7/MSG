@@ -47,59 +47,177 @@ export default function FAQsPage() {
 
   const generalFAQs: FAQ[] = [
     {
-      question: "What types of MSG equipment do you provide?",
+      question: "What types of oilfield equipment do you provide?",
       answer:
-        "We offer a wide range of MSG equipment, including piping tools, valves, flanges, fittings, and more. Our products are designed to meet the highest standards of quality and durability for oil and gas production.",
+        "We offer a wide range of oilfield equipment, including drilling tools, production equipment, safety gear, and various other essential items for oil and gas exploration and production.",
     },
     {
       question: "How can I request a quote or place an order?",
       answer:
-        "You can request a quote by filling out our online form, calling our sales team directly, or sending us an email. Our team will promptly respond with detailed pricing and availability information.",
+        "You can request a quote or place an order by contacting our sales team directly through our website, email, or phone. Our team will assist you in selecting the right products and provide pricing information.",
     },
     {
-      question: "Do you offer international shipping?",
+      question: "Do you offer customized solutions for unique project requirements?",
       answer:
-        "Yes, we offer international shipping to most countries worldwide. Shipping costs and delivery times vary depending on your location. Please contact our logistics team for specific details about shipping to your region.",
+        "Yes, we specialize in providing customized solutions to meet your specific project needs. Contact our experts to discuss your requirements, and we'll work to tailor a solution for you.",
     },
     {
       question: "What is your standard lead time for product delivery?",
       answer:
-        "Our standard lead time varies by product, but typically ranges from 1-4 weeks. For commonly stocked items, we can often ship within 2-3 business days. Custom orders may require additional production time.",
+        "Our lead time varies depending on the product and quantity. We aim to provide accurate delivery estimates when you request a quote or place an order. We also offer expedited shipping options when necessary.",
     },
   ]
 
+  //   const flangesFAQs: FAQ[] = [
+  //     {
+  //       question: "What are Flangs and why is it used?",
+  //       answer:
+  //         "Flanges are used to connect Pipes, Pipe Fittings, Valves, Pumps, Compressors, etc, with each other, to make a complete piping system.",
+  //     },
+  //     {
+  //       question: "Common Types of Flanges",
+  //       answer:
+  //         `There are various type of Flanges. Most common type of Flanges are as follows with face finish Raised Face, RTJ and Flat Face. 
+
+
+  // 1.Weld Neck Flanges
+
+  // 2.Slip On Flanges
+
+  // 3.Socket Weld Flanges
+
+  // 4.Threaded Flanges
+
+  // 5.Blind Flanges.
+
+  // Generally, size of pipe is above 2inch, also, where Pressure is high and Flanged Joints are required to be long lasting, then Weld Neck, Slip On or Socket Weld Flanges are used.
+
+  // Wherever pressure is low and mechanical forces (Vibration, Expansion, Oscillation, Contraction) are absent and pipe connection is less than 2”, Threaded Flanges are used. Further, it is imperative to use Threaded Flanges in Explosive Areas.
+
+  // Blind Flanges are used to curtail the flow of the fluid.
+
+  // Person needs to be trained to carry out Flanged Joints. Standard TSE-TS EN 1591 Part 1-4 is the reference to execute Flange Joint.`,
+  //     },
+  //     {
+  //       "question": "Special Type of Flanges",
+  //       "answer": `There are specific or special types of flanges such as:</p><ul><li>Swivel Flanges</li><li>Expander/Reducer Flanges</li><li>Nippo Flange</li><li>Weldo Flange</li><li>Orifice Flange</li></ul>`
+  //     },
+  //     {
+  //       question: "Flange Grade and its corresponding Pipe Grade",
+  //       answer:
+  //         "Special types include Orifice Flanges, Spectacle Blind Flanges, Reducing Flanges, and Expander Flanges. These are designed for specific applications where standard flanges may not be suitable.",
+  //     },
+  //     {
+  //       question: "How to order Flange?",
+  //       answer:
+  //         "Flange grades must be compatible with pipe grades to ensure system integrity. Common pairings include ASTM A105 flanges with A53/A106 pipes for carbon steel applications, and A182 F304/F316 flanges with A312 TP304/TP316 pipes for stainless steel systems.",
+  //     },
+
+
+  //   ]
+
   const flangesFAQs: FAQ[] = [
     {
-      question: "What are Flanges and why are used?",
+      question: "What types of oilfield equipment do you provide?",
       answer:
-        "Flanges are used to connect Pipes, Fittings, Valves, Pumps, Equipment, etc. and also allow for easy cleaning, inspection or modification of the piping system.",
+        "We offer a wide range of oilfield equipment, including drilling tools, production equipment, safety gear, and various other essential items for oil and gas exploration and production.",
     },
     {
       question: "Common Types of Flanges",
-      answer:
-        "The most common types include Weld Neck Flanges, Slip-On Flanges, Socket Weld Flanges, Threaded Flanges, Blind Flanges, and Lap Joint Flanges. Each type has specific applications and advantages depending on the piping system requirements.",
+      answer: (
+        <div>
+          <p>There are various type of Flanges. Most common type of Flanges are as follows with face finish Raised Face, RTJ and Flat Face.</p><br />
+          <ol className="list-disc pl-5">
+            <li>Weld Neck Flanges</li>
+            <li>Slip On Flanges</li>
+            <li>Socket Weld Flanges</li>
+            <li>Threaded Flanges</li>
+            <li>Blind Flanges</li>
+          </ol><br />
+          <p>
+            Generally, for pipes above 2 inches with high pressure, Weld Neck, Slip On, or Socket Weld flanges are used.
+          </p><br />
+          <p>
+            Wherever pressure is low and mechanical forces (Vibration, Expansion, Oscillation, Contraction) are absent and pipe connection is less than 2”, Threaded Flanges are used. Further, it is imperative to use Threaded Flanges in Explosive Areas.
+          </p><br />
+          <p>Blind Flanges are used to curtail the flow of the fluid.</p><br />
+          <p>Person needs to be trained to carry out Flanged Joints. Standard TSE-TS EN 1591 Part 1-4 is the reference to execute Flange Joint.</p><br />
+        </div>
+      ),
     },
     {
-      question: "Special Types of Flanges",
-      answer:
-        "Special types include Orifice Flanges, Spectacle Blind Flanges, Reducing Flanges, and Expander Flanges. These are designed for specific applications where standard flanges may not be suitable.",
+      question: "Special Type of Flanges",
+      answer: (
+        <div>
+          <p>There are specific or special types of flanges such as:</p><br />
+          <ul className="list-disc pl-5">
+            <li>Swivel Flanges</li>
+            <li>Expander/Reducer Flanges</li>
+            <li>Nippo Flange</li>
+            <li>Weldo Flange</li>
+            <li>Orifice Flange</li>
+          </ul>
+        </div>
+      ),
     },
     {
-      question: "Flange Grades and its corresponding Pipe Grades",
-      answer:
-        "Flange grades must be compatible with pipe grades to ensure system integrity. Common pairings include ASTM A105 flanges with A53/A106 pipes for carbon steel applications, and A182 F304/F316 flanges with A312 TP304/TP316 pipes for stainless steel systems.",
+      question: "Flange Grade and its corresponding Pipe Grade",
+      answer: (
+        <div>
+          <p>Flanges conforming to <b>ASTM A105N</b> (Carbon Steel High Temperature). These Flanges can be used along with Pipes conforming to ASTM A53, A106, API 5L</p><br />
+          <p>1.Flanges conforming to <b>ASTM A350</b> Grade LF1/2/3 (Carbon Steel Low Temperature). These Flanges can be used along with Pipes conforming to ASTM A333:</p><br />
+          <p>2.Flanges conforming to <b>ASTM A694</b> Grades F42 to F80(High Yield Carbon Steel). These Flanges can be used along with Pipes conforming to API 5L Pipe Grades</p><br />
+          <p>3.Flanges conforming to <b>ASTM A182</b> Grades F1 to F91(Alloy Steel Flanges). These Flanges can be used along with Pipes conforming to ASTM A335.</p><br />
+          <p>4.Flanges conforming to <b>ASTM A182</b> Grade F304, F316, F321. These Flanges can be used along with Pipes conforming to ASTM A312 SS Pipes</p><br />
+          <p>5.Flanges conforming to ASTM A182 Grade F44/F51/F53/F55 (Duplex/Super Duplex). These Flanges can be used along with Pipes conforming to ASTM A790/A928, Inconel, Incoloy, Hastelloy, Monel.</p><br />
+        </div>
+      ),
     },
     {
-      question: "How to order Flanges?",
-      answer:
-        "When ordering flanges, specify the type, size, pressure class, material grade, facing type (RF, FF, RTJ), and applicable standards (ASME, API, etc.). Including your application details helps us recommend the most suitable products.",
-    },
-    {
-      question: "Class Markings for various Pipe Standards with Flange Standards",
-      answer:
-        "Flanges are marked according to standards like ASME B16.5 (Class 150, 300, 600, 900, 1500, 2500), API 6A (2000, 3000, 5000, 10000, 15000 PSI), and MSS SP-44 for large diameter flanges. These markings ensure compatibility with corresponding pipe standards.",
+      question: "How to order Flang",
+      answer: (
+        <div>
+          <p>While ordering Flanges, following minimum details are required <br /><br />
+
+            Type of Flange<br />
+
+            Eg.: Weld Neck, Socket Weld, etc<br /><br />
+
+            Size of Pipe (NPS-Nominal Pipe Size)<br />
+
+            Eg.:2”,3”,etc.<br /><br />
+
+            Schedule of the Pipe<br />
+
+            Eg.: Sch 10,Sch,20,Sch30,Sch Std, Sch 40,etc<br /><br />
+
+            Rating or Class<br />
+
+            Eg.: As per Standard such as ASME (150 – 2500),JIS B2220/KS1503(5k – 30k),<br /> DIN/UNI/EN 1092-1/GOST 12820,12821-80(PN6 – PN100),SANS/SABS(Class 600/3 – 4000/3),etc.<br /><br />
+
+            Face of the Flange<br />
+
+            Eg.: FF(Flat Face),RF(Raised Face),RTJ (Ring Type Joint),etc.<br /><br />
+
+            Surface Finish of the Flange<br />
+
+            Eg.: Smooth, Stock, Concentric Serrated, etc<br /><br />
+
+            Grade of the Material<br />
+
+            Eg.: Ferrous such as Forged Carbon Steel, Stainless Steel, Duplex,etc or<br />
+
+            Non-Ferrous such as CuproNickel,Copper,Aluminium, Bronze.<br /><br />
+
+            Specification of the Flange<br />
+
+            Eg.: ASME B16.5,ASME B16.47 Type A,EN 1092-1,JIS,UNI,DIN, etc</p><br />
+
+        </div>
+      ),
     },
   ]
+
 
   return (
     <main className="overflow-hidden">
@@ -131,19 +249,19 @@ export default function FAQsPage() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className="border border-gray-200 rounded-lg overflow-hidden"
+                  className="border border-gray-200 bg-gray-800 rounded-lg overflow-hidden"
                 >
                   <button
                     onClick={() => toggleGeneral(index)}
-                    className="w-full flex items-center justify-between p-4 text-left bg-white hover:bg-gray-50 transition-colors duration-300"
+                    className="w-full flex items-center justify-between p-4 text-left  transition-colors duration-300"
                   >
-                    <span className="font-medium text-gray-900">{faq.question}</span>
+                    <span className="font-medium text-white">{faq.question}</span>
                     <motion.div
                       animate={{ rotate: openGeneral === index ? 180 : 0 }}
                       transition={{ duration: 0.3 }}
                       className="flex-shrink-0 ml-2"
                     >
-                      <ChevronDown className="h-5 w-5 text-gray-500" />
+                      <ChevronDown className="h-5 w-5 text-white" />
                     </motion.div>
                   </button>
 
@@ -187,19 +305,19 @@ export default function FAQsPage() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
-                  className="border border-gray-200 rounded-lg overflow-hidden"
+                  className="border border-gray-200 bg-gray-800 rounded-lg overflow-hidden"
                 >
                   <button
                     onClick={() => toggleFlanges(index)}
-                    className="w-full flex items-center justify-between p-4 text-left bg-white hover:bg-gray-50 transition-colors duration-300"
+                    className="w-full flex items-center justify-between p-4 text-left transition-colors duration-300"
                   >
-                    <span className="font-medium text-gray-900">{faq.question}</span>
+                    <span className="font-medium text-white">{faq.question}</span>
                     <motion.div
                       animate={{ rotate: openFlanges === index ? 180 : 0 }}
                       transition={{ duration: 0.3 }}
                       className="flex-shrink-0 ml-2"
                     >
-                      <ChevronDown className="h-5 w-5 text-gray-500" />
+                      <ChevronDown className="h-5 w-5 text-white" />
                     </motion.div>
                   </button>
 
