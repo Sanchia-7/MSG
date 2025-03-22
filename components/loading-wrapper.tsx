@@ -16,7 +16,7 @@ export default function LoadingWrapper({ children }: LoadingWrapperProps) {
     // Show loading screen for at least 1.5 seconds
     const timer = setTimeout(() => {
       setIsLoading(false)
-    }, 1500)
+    }, 3000)
 
     return () => clearTimeout(timer)
   }, [])

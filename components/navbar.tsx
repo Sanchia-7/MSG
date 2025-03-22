@@ -93,8 +93,8 @@ export default function Navbar() {
       name: "Calculator",
       href: "/calculator",
       dropdown: [
-        { name: "Pipe Weight Calculator", href: "/pipe-weight" },
-        { name: "Flange Weight Calculator", href: "/flange-weight" },
+        { name: "Units Calculator", href: "/unit-converter" },
+        { name: "Pipe Price Calculator", href: "/pipe-price" },
       ],
     },
   ]

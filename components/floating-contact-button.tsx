@@ -195,9 +195,8 @@ export default function FloatingContactButton() {
         animate={isOpen ? "open" : "closed"}
         whileHover="hover"
         whileTap="tap"
-        className={`relative flex h-16 w-16 items-center justify-center rounded-full ${
-          isOpen ? "bg-[#F0F0A0]" : "bg-[#F0F0A0]"
-        } text-gray-800 shadow-lg transition-colors duration-300`}
+        className={`relative flex h-16 w-16 items-center justify-center rounded-full ${isOpen ? "bg-[#F0F0A0]" : "bg-[#F0F0A0]"
+          } text-gray-800 shadow-lg transition-colors duration-300`}
       >
         <motion.div
           animate={{

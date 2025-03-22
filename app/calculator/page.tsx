@@ -33,13 +33,13 @@ export default function CalculatorPage() {
       title: "Unit Calculator",
       description: "Calculate the weight of pipes based on dimensions and material",
       icon: "📏",
-      link: "/calculator/pipe-price",
+      link: "/calculator/unit-converter",
     },
     {
-      title: "Flange Weight Calculator",
-      description: "Calculate the weight of flanges based on dimensions and material",
-      icon: "⚖️",
-      link: "/calculator/unit-converter",
+      title: "Pipe Price Calculator",
+      description: "Calculate the Pipe Price based on dimensions and material",
+      icon: "🪈",
+      link: "/calculator/pipe-price",
     },
 
   ]

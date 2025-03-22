@@ -11,47 +11,58 @@ import PageHeader from "@/components/page-header"
 // Gallery categories and images
 const galleryData = {
   products: [
-    { src: "/placeholder.svg?height=300&width=300", alt: "Product 1" },
-    { src: "/placeholder.svg?height=300&width=300", alt: "Product 2" },
-    { src: "/placeholder.svg?height=300&width=300", alt: "Product 3" },
-    { src: "/placeholder.svg?height=300&width=300", alt: "Product 4" },
-    { src: "/placeholder.svg?height=300&width=300", alt: "Product 5" },
-    { src: "/placeholder.svg?height=300&width=300", alt: "Product 6" },
-    { src: "/placeholder.svg?height=300&width=300", alt: "Product 7" },
-    { src: "/placeholder.svg?height=300&width=300", alt: "Product 8" },
-    { src: "/placeholder.svg?height=300&width=300", alt: "Product 9" },
-    { src: "/placeholder.svg?height=300&width=300", alt: "Product 10" },
-    { src: "/placeholder.svg?height=300&width=300", alt: "Product 11" },
-    { src: "/placeholder.svg?height=300&width=300", alt: "Product 12" },
+    { src: "/gp1.webp", alt: "Product 1" },
+    { src: "/gp2.webp", alt: "Product 2" },
+    { src: "/gp3.webp", alt: "Product 3" },
+    { src: "/gp4.webp", alt: "Product 4" },
+    { src: "/gp5.webp", alt: "Product 5" },
+    { src: "/gp6.webp", alt: "Product 6" },
+    { src: "/gp7.webp", alt: "Product 7" },
+    { src: "/gp8.webp", alt: "Product 8" },
+    { src: "/gp9.webp", alt: "Product 9" },
+    { src: "/gp10.webp", alt: "Product 10" },
+    { src: "/gp11.webp", alt: "Product 11" },
+    { src: "/gp12.webp", alt: "Product 12" },
+    { src: "/gp13.webp", alt: "Product 13" },
+    { src: "/gp14.webp", alt: "Product 14" },
   ],
   warehouse: [
-    { src: "/placeholder.svg?height=300&width=300", alt: "Warehouse 1" },
-    { src: "/placeholder.svg?height=300&width=300", alt: "Warehouse 2" },
-    { src: "/placeholder.svg?height=300&width=300", alt: "Warehouse 3" },
-    { src: "/placeholder.svg?height=300&width=300", alt: "Warehouse 4" },
-    { src: "/placeholder.svg?height=300&width=300", alt: "Warehouse 5" },
-    { src: "/placeholder.svg?height=300&width=300", alt: "Warehouse 6" },
-    { src: "/placeholder.svg?height=300&width=300", alt: "Warehouse 7" },
-    { src: "/placeholder.svg?height=300&width=300", alt: "Warehouse 8" },
+    { src: "/gw1.webp", alt: "Warehouse 1" },
+    { src: "/gw2.webp", alt: "Warehouse 2" },
+    { src: "/gw3.webp", alt: "Warehouse 3" },
+    { src: "/gw4.webp", alt: "Warehouse 4" },
+    { src: "/gw5.webp", alt: "Warehouse 5" },
+    { src: "/gw6.webp", alt: "Warehouse 6" },
+    { src: "/gw7.webp", alt: "Warehouse 7" },
+    { src: "/gw8.webp", alt: "Warehouse 8" },
+    { src: "/gw9.webp", alt: "Warehouse 9" },
+    { src: "/gw10.webp", alt: "Warehouse 10" },
+    { src: "/gw11.webp", alt: "Warehouse 11" },
+    { src: "/gw12.webp", alt: "Warehouse 12" },
+    { src: "/gw13.webp", alt: "Warehouse 13" },
+    { src: "/gw14.webp", alt: "Warehouse 14" },
+    { src: "/gw15.webp", alt: "Warehouse 15" },
+    { src: "/gw16.webp", alt: "Warehouse 16" },
+    { src: "/gw17.webp", alt: "Warehouse 17" },
+    { src: "/gw18.webp", alt: "Warehouse 18" },
   ],
   office: [
-    { src: "/placeholder.svg?height=300&width=300", alt: "Office 1" },
-    { src: "/placeholder.svg?height=300&width=300", alt: "Office 2" },
-    { src: "/placeholder.svg?height=300&width=300", alt: "Office 3" },
-    { src: "/placeholder.svg?height=300&width=300", alt: "Office 4" },
-    { src: "/placeholder.svg?height=300&width=300", alt: "Office 5" },
-    { src: "/placeholder.svg?height=300&width=300", alt: "Office 6" },
+    { src: "/go1.webp", alt: "Office 1" },
+    { src: "/go2.webp", alt: "Office 2" },
+    { src: "/go3.webp", alt: "Office 3" },
+    { src: "/go4.webp", alt: "Office 4" },
+    { src: "/go5.webp", alt: "Office 5" },
+    { src: "/go6.webp", alt: "Office 6" },
   ],
   testing: [
-    { src: "/placeholder.svg?height=300&width=300", alt: "Testing 1" },
-    { src: "/placeholder.svg?height=300&width=300", alt: "Testing 2" },
-    { src: "/placeholder.svg?height=300&width=300", alt: "Testing 3" },
-    { src: "/placeholder.svg?height=300&width=300", alt: "Testing 4" },
-    { src: "/placeholder.svg?height=300&width=300", alt: "Testing 5" },
-    { src: "/placeholder.svg?height=300&width=300", alt: "Testing 6" },
-    { src: "/placeholder.svg?height=300&width=300", alt: "Testing 7" },
-    { src: "/placeholder.svg?height=300&width=300", alt: "Testing 8" },
-    { src: "/placeholder.svg?height=300&width=300", alt: "Testing 9" },
+    { src: "/gt1.webp", alt: "Testing 1" },
+    { src: "/gt2.webp", alt: "Testing 2" },
+    { src: "/gt3.webp", alt: "Testing 3" },
+    { src: "/gt4.webp", alt: "Testing 4" },
+    { src: "/gt5.webp", alt: "Testing 5" },
+    { src: "/gt6.webp", alt: "Testing 6" },
+    { src: "/gt7.webp", alt: "Testing 7" },
+    { src: "/gt8.webp", alt: "Testing 8" },
   ],
 }
 
@@ -123,6 +134,7 @@ const GallerySection = ({ title, images, onImageClick }) => {
 
 // Lightbox component
 const Lightbox = ({ image, category, onClose }) => {
+  console.log("Lightbox Image:", image); // Check if image is passed correctly
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -140,7 +152,7 @@ const Lightbox = ({ image, category, onClose }) => {
         onClick={(e) => e.stopPropagation()}
       >
         <div className="relative h-[80vh] w-auto max-w-[90vw]">
-          <Image src={image.src || "/placeholder.svg"} alt={image.alt} fill className="object-contain" />
+          <Image src={image.src} alt={image.alt} fill className="object-contain" />
         </div>
         <button
           className="absolute -right-4 -top-4 flex h-10 w-10 items-center justify-center rounded-full bg-white text-gray-900 shadow-lg transition-colors hover:bg-gray-200"
@@ -162,6 +174,7 @@ export default function GalleryPage() {
   const [selectedCategory, setSelectedCategory] = useState("")
 
   const handleImageClick = (image, category) => {
+    console.log("Image clicked:", image, category); // Add this line for debugging
     setSelectedImage(image)
     setSelectedCategory(category)
   }
@@ -172,43 +185,43 @@ export default function GalleryPage() {
 
   return (
     <main>
-    <Navbar/>
-    <div>
-      <PageHeader title="Our Gallery" />
+      <Navbar />
+      <div>
+        <PageHeader title="Our Gallery" />
 
-      <div className="container mx-auto px-4 py-12">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="mb-12 text-center"
-        >
-          <p className="mx-auto max-w-2xl text-lg text-gray-600 dark:text-gray-400">
-            Explore our collection of high-quality industrial products, facilities, and services through our
-            comprehensive gallery.
-          </p>
-        </motion.div>
+        <div className="container mx-auto px-4 py-12">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="mb-12 text-center"
+          >
+            <p className="mx-auto max-w-2xl text-lg text-gray-600 dark:text-gray-400">
+              Explore our collection of high-quality industrial products, facilities, and services through our
+              comprehensive gallery.
+            </p>
+          </motion.div>
 
-        <GallerySection title="PRODUCTS" images={galleryData.products} onImageClick={handleImageClick} />
+          <GallerySection title="PRODUCTS" images={galleryData.products} onImageClick={handleImageClick} />
 
-        <div className="my-16 h-px w-full bg-gradient-to-r from-transparent via-gray-300 to-transparent dark:via-gray-700"></div>
+          <div className="my-16 h-px w-full bg-gradient-to-r from-transparent via-gray-300 to-transparent dark:via-gray-700"></div>
 
-        <GallerySection title="Warehouse" images={galleryData.warehouse} onImageClick={handleImageClick} />
+          <GallerySection title="Warehouse" images={galleryData.warehouse} onImageClick={handleImageClick} />
 
-        <div className="my-16 h-px w-full bg-gradient-to-r from-transparent via-gray-300 to-transparent dark:via-gray-700"></div>
+          <div className="my-16 h-px w-full bg-gradient-to-r from-transparent via-gray-300 to-transparent dark:via-gray-700"></div>
 
-        <GallerySection title="Office" images={galleryData.office} onImageClick={handleImageClick} />
+          <GallerySection title="Office" images={galleryData.office} onImageClick={handleImageClick} />
 
-        <div className="my-16 h-px w-full bg-gradient-to-r from-transparent via-gray-300 to-transparent dark:via-gray-700"></div>
+          <div className="my-16 h-px w-full bg-gradient-to-r from-transparent via-gray-300 to-transparent dark:via-gray-700"></div>
 
-        <GallerySection title="Testing & Inspection" images={galleryData.testing} onImageClick={handleImageClick} />
+          <GallerySection title="Testing & Inspection" images={galleryData.testing} onImageClick={handleImageClick} />
+        </div>
+
+        <AnimatePresence>
+          {selectedImage && <Lightbox image={selectedImage} category={selectedCategory} onClose={handleCloseLightbox} />}
+        </AnimatePresence>
       </div>
-
-      <AnimatePresence>
-        {selectedImage && <Lightbox image={selectedImage} category={selectedCategory} onClose={handleCloseLightbox} />}
-      </AnimatePresence>
-    </div>
-    <Footer/>
+      <Footer />
     </main>
   )
 }

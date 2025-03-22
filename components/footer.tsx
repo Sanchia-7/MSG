@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 import { useInView } from "react-intersection-observer"
 import Link from "next/link"
 import { Facebook, Twitter, Linkedin, Instagram } from "lucide-react"
+// import img from "/logo3.png"
 
 export default function Footer() {
   const [ref, inView] = useInView({
@@ -59,6 +60,7 @@ export default function Footer() {
           <motion.div variants={itemVariants} className="space-y-6">
             <div className="flex items-center">
               <div className="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center mr-3">
+                {/* <input type="image" src="/logo3.png" alt="" /> */}
                 <span className="text-gray-900 font-bold text-xl">MSG</span>
               </div>
               <div>

@@ -92,3 +92,58 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+
+
+
+
+/* 1) Bottom-up color fill */
+@keyframes fillFromBottom {
+  0% {
+    clip-path: inset(100% 0 0 0); /* Hide from bottom to top */
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 0.8;
+  }
+  100% {
+    clip-path: inset(0 0 0 0); /* Fully visible */
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.animate-fillFromBottom {
+  animation: fillFromBottom 3s ease-in-out forwards;
+}
+
+/* 2) Fade in from above */
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fadeInDown {
+  animation: fadeInDown 1s ease-out forwards;
+}
+
+/* 3) Fade in from below */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fadeInUp {
+  animation: fadeInUp 1s ease-out forwards;
+}

@@ -1,5 +1,7 @@
 "use client"
 
+import type React from "react"
+
 import { motion } from "framer-motion"
 import { useInView } from "react-intersection-observer"
 import { useState } from "react"
@@ -10,7 +12,7 @@ import PageHeader from "@/components/page-header"
 
 type FAQ = {
   question: string
-  answer: string
+  answer: string | React.ReactNode
 }
 
 export default function FAQsPage() {
@@ -77,8 +79,7 @@ export default function FAQsPage() {
   //     {
   //       question: "Common Types of Flanges",
   //       answer:
-  //         `There are various type of Flanges. Most common type of Flanges are as follows with face finish Raised Face, RTJ and Flat Face. 
-
+  //         `There are various type of Flanges. Most common type of Flanges are as follows with face finish Raised Face, RTJ and Flat Face.
 
   // 1.Weld Neck Flanges
 
@@ -113,7 +114,6 @@ export default function FAQsPage() {
   //         "Flange grades must be compatible with pipe grades to ensure system integrity. Common pairings include ASTM A105 flanges with A53/A106 pipes for carbon steel applications, and A182 F304/F316 flanges with A312 TP304/TP316 pipes for stainless steel systems.",
   //     },
 
-
   //   ]
 
   const flangesFAQs: FAQ[] = [
@@ -125,31 +125,46 @@ export default function FAQsPage() {
     {
       question: "Common Types of Flanges",
       answer: (
-        <div>
-          <p>There are various type of Flanges. Most common type of Flanges are as follows with face finish Raised Face, RTJ and Flat Face.</p><br />
+        <>
+          <p>
+            There are various type of Flanges. Most common type of Flanges are as follows with face finish Raised Face,
+            RTJ and Flat Face.
+          </p>
+          <br />
           <ol className="list-disc pl-5">
             <li>Weld Neck Flanges</li>
             <li>Slip On Flanges</li>
             <li>Socket Weld Flanges</li>
             <li>Threaded Flanges</li>
             <li>Blind Flanges</li>
-          </ol><br />
+          </ol>
+          <br />
           <p>
             Generally, for pipes above 2 inches with high pressure, Weld Neck, Slip On, or Socket Weld flanges are used.
-          </p><br />
+          </p>
+          <br />
           <p>
-            Wherever pressure is low and mechanical forces (Vibration, Expansion, Oscillation, Contraction) are absent and pipe connection is less than 2”, Threaded Flanges are used. Further, it is imperative to use Threaded Flanges in Explosive Areas.
-          </p><br />
-          <p>Blind Flanges are used to curtail the flow of the fluid.</p><br />
-          <p>Person needs to be trained to carry out Flanged Joints. Standard TSE-TS EN 1591 Part 1-4 is the reference to execute Flange Joint.</p><br />
-        </div>
+            Wherever pressure is low and mechanical forces (Vibration, Expansion, Oscillation, Contraction) are absent
+            and pipe connection is less than 2”, Threaded Flanges are used. Further, it is imperative to use Threaded
+            Flanges in Explosive Areas.
+          </p>
+          <br />
+          <p>Blind Flanges are used to curtail the flow of the fluid.</p>
+          <br />
+          <p>
+            Person needs to be trained to carry out Flanged Joints. Standard TSE-TS EN 1591 Part 1-4 is the reference to
+            execute Flange Joint.
+          </p>
+          <br />
+        </>
       ),
     },
     {
       question: "Special Type of Flanges",
       answer: (
-        <div>
-          <p>There are specific or special types of flanges such as:</p><br />
+        <>
+          <p>There are specific or special types of flanges such as:</p>
+          <br />
           <ul className="list-disc pl-5">
             <li>Swivel Flanges</li>
             <li>Expander/Reducer Flanges</li>
@@ -157,67 +172,100 @@ export default function FAQsPage() {
             <li>Weldo Flange</li>
             <li>Orifice Flange</li>
           </ul>
-        </div>
+        </>
       ),
     },
     {
       question: "Flange Grade and its corresponding Pipe Grade",
       answer: (
-        <div>
-          <p>Flanges conforming to <b>ASTM A105N</b> (Carbon Steel High Temperature). These Flanges can be used along with Pipes conforming to ASTM A53, A106, API 5L</p><br />
-          <p>1.Flanges conforming to <b>ASTM A350</b> Grade LF1/2/3 (Carbon Steel Low Temperature). These Flanges can be used along with Pipes conforming to ASTM A333:</p><br />
-          <p>2.Flanges conforming to <b>ASTM A694</b> Grades F42 to F80(High Yield Carbon Steel). These Flanges can be used along with Pipes conforming to API 5L Pipe Grades</p><br />
-          <p>3.Flanges conforming to <b>ASTM A182</b> Grades F1 to F91(Alloy Steel Flanges). These Flanges can be used along with Pipes conforming to ASTM A335.</p><br />
-          <p>4.Flanges conforming to <b>ASTM A182</b> Grade F304, F316, F321. These Flanges can be used along with Pipes conforming to ASTM A312 SS Pipes</p><br />
-          <p>5.Flanges conforming to ASTM A182 Grade F44/F51/F53/F55 (Duplex/Super Duplex). These Flanges can be used along with Pipes conforming to ASTM A790/A928, Inconel, Incoloy, Hastelloy, Monel.</p><br />
-        </div>
+        <>
+          <p>
+            Flanges conforming to <b>ASTM A105N</b> (Carbon Steel High Temperature). These Flanges can be used along
+            with Pipes conforming to ASTM A53, A106, API 5L
+          </p>
+          <br />
+          <p>
+            1.Flanges conforming to <b>ASTM A350</b> Grade LF1/2/3 (Carbon Steel Low Temperature). These Flanges can be
+            used along with Pipes conforming to ASTM A333:
+          </p>
+          <br />
+          <p>
+            2.Flanges conforming to <b>ASTM A694</b> Grades F42 to F80(High Yield Carbon Steel). These Flanges can be
+            used along with Pipes conforming to API 5L Pipe Grades
+          </p>
+          <br />
+          <p>
+            3.Flanges conforming to <b>ASTM A182</b> Grades F1 to F91(Alloy Steel Flanges). These Flanges can be used
+            along with Pipes conforming to ASTM A335.
+          </p>
+          <br />
+          <p>
+            4.Flanges conforming to <b>ASTM A182</b> Grade F304, F316, F321. These Flanges can be used along with Pipes
+            conforming to ASTM A312 SS Pipes
+          </p>
+          <br />
+          <p>
+            5.Flanges conforming to ASTM A182 Grade F44/F51/F53/F55 (Duplex/Super Duplex). These Flanges can be used
+            along with Pipes conforming to ASTM A790/A928, Inconel, Incoloy, Hastelloy, Monel.
+          </p>
+          <br />
+        </>
       ),
     },
     {
       question: "How to order Flang",
       answer: (
-        <div>
-          <p>While ordering Flanges, following minimum details are required <br /><br />
-
-            Type of Flange<br />
-
-            Eg.: Weld Neck, Socket Weld, etc<br /><br />
-
-            Size of Pipe (NPS-Nominal Pipe Size)<br />
-
-            Eg.:2”,3”,etc.<br /><br />
-
-            Schedule of the Pipe<br />
-
-            Eg.: Sch 10,Sch,20,Sch30,Sch Std, Sch 40,etc<br /><br />
-
-            Rating or Class<br />
-
-            Eg.: As per Standard such as ASME (150 – 2500),JIS B2220/KS1503(5k – 30k),<br /> DIN/UNI/EN 1092-1/GOST 12820,12821-80(PN6 – PN100),SANS/SABS(Class 600/3 – 4000/3),etc.<br /><br />
-
-            Face of the Flange<br />
-
-            Eg.: FF(Flat Face),RF(Raised Face),RTJ (Ring Type Joint),etc.<br /><br />
-
-            Surface Finish of the Flange<br />
-
-            Eg.: Smooth, Stock, Concentric Serrated, etc<br /><br />
-
-            Grade of the Material<br />
-
-            Eg.: Ferrous such as Forged Carbon Steel, Stainless Steel, Duplex,etc or<br />
-
-            Non-Ferrous such as CuproNickel,Copper,Aluminium, Bronze.<br /><br />
-
-            Specification of the Flange<br />
-
-            Eg.: ASME B16.5,ASME B16.47 Type A,EN 1092-1,JIS,UNI,DIN, etc</p><br />
-
-        </div>
+        <>
+          <p>
+            While ordering Flanges, following minimum details are required <br />
+            <br />
+            Type of Flange
+            <br />
+            Eg.: Weld Neck, Socket Weld, etc
+            <br />
+            <br />
+            Size of Pipe (NPS-Nominal Pipe Size)
+            <br />
+            Eg.:2”,3”,etc.
+            <br />
+            <br />
+            Schedule of the Pipe
+            <br />
+            Eg.: Sch 10,Sch,20,Sch30,Sch Std, Sch 40,etc
+            <br />
+            <br />
+            Rating or Class
+            <br />
+            Eg.: As per Standard such as ASME (150 – 2500),JIS B2220/KS1503(5k – 30k),
+            <br /> DIN/UNI/EN 1092-1/GOST 12820,12821-80(PN6 – PN100),SANS/SABS(Class 600/3 – 4000/3),etc.
+            <br />
+            <br />
+            Face of the Flange
+            <br />
+            Eg.: FF(Flat Face),RF(Raised Face),RTJ (Ring Type Joint),etc.
+            <br />
+            <br />
+            Surface Finish of the Flange
+            <br />
+            Eg.: Smooth, Stock, Concentric Serrated, etc
+            <br />
+            <br />
+            Grade of the Material
+            <br />
+            Eg.: Ferrous such as Forged Carbon Steel, Stainless Steel, Duplex,etc or
+            <br />
+            Non-Ferrous such as CuproNickel,Copper,Aluminium, Bronze.
+            <br />
+            <br />
+            Specification of the Flange
+            <br />
+            Eg.: ASME B16.5,ASME B16.47 Type A,EN 1092-1,JIS,UNI,DIN, etc
+          </p>
+          <br />
+        </>
       ),
     },
   ]
-
 
   return (
     <main className="overflow-hidden">
